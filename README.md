@@ -40,7 +40,6 @@ int main() {
 }
 
 
-
 //penjelasan: 
 // a dan b adalah b.bulat dengan ketentuan a>b, jika a<b maka akan dilakukan sistem swap(tukar)
 // nilai fpb akan didapatkan apabila s=0, jika s != 0, maka perhitungan akan berlanjut hingga s=0
