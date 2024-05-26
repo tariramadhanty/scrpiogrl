@@ -3,7 +3,8 @@ using namespace std;
 
 int EuclideanGCD(int m, int n) 
 {
-  if (m < 0 || n < 0) {
+  if (m < 0 || n < 0) 
+  { 
     cerr << "Input tidak valid. Bilangan harus non-negatif." << endl;
     return -1;
   }
