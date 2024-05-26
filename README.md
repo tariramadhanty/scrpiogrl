@@ -1,8 +1,8 @@
 #include <iostream>
-
 using namespace std;
 
-int EuclideanGCD(int m, int n) {
+int EuclideanGCD(int m, int n) 
+{
   // Memeriksa nilai input
   if (m < 0 || n < 0) {
     cerr << "Input tidak valid. Bilangan harus non-negatif." << endl;
