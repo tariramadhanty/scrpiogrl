@@ -2,7 +2,6 @@
 using namespace std;
 
 int algoritma_euclidean(int a, int b) {         //deklarasi fungsi
-   
     if (a < b) {                               //memeriksa apakah a>b,jika ternyata nilai a<b maka nilainya akan di swap (tukar)
         swap(a,b); }
 
