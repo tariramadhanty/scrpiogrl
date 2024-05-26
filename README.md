@@ -1,32 +1,25 @@
 #include <iostream>
 using namespace std;
 
-int EuclideanGCD(int m, int n) 
-{
-  if (m < 0 || n < 0) 
-  { 
-    cerr << "Input tidak valid. Bilangan harus non-negatif." << endl;
-    return -1;
-  }
-    while (n != 0) {
-    int r = m % n; // Sisa pembagian m dengan n
-    m = n;  // Menukar nilai m dan n
-    n = r;  // Sisa menjadi nilai n baru
-  }
- return m;
+
+//fungsi menghitung dengan Algoritma Euclidean
+int hitungfpb (int a, int b) { //fungsi hitungfpb dengan parameter a dan b
+    int r;//deklarasi variabel r
+    while(a%b!=0) {//perulangan jika a tidak habis dibagi b
+        r=a%b;//r adalah a mod b
+        a=b;//a menjadi b
+        b=r;//b menjadi r
+    }
+    return b;//mengembalikan nilai b
 }
+//looping akan berhenti jika a habis dibagi b, maka nilai b adalah FPB dari a dan b
 
 int main() {
-  int m, n;
-
- 
-  cout << "Masukkan bilangan pertama: ";
-  cin >> m;
-  cout << "Masukkan bilangan kedua: ";
-  cin >> n;
-
-  int fpb = EuclideanGCD(m, n);
-  cout << "FPB dari " << m << " dan " << n << " adalah: " << fpb << endl;
-
-  return 0;
+    int m ,n; 
+    cout<<"m: "; //input m
+    cin>>m;//memasukkan input ke variabel m
+    cout<<"n: ";//input n
+    cin>>n;//memasukkan input ke variabel n
+    int fpb = hitungfpb(m, n);//menghitung fpb dengan memanggil fungsi hitungfpb dengan parameter m dan n
+    cout << "FPB: " << fpb << endl;//output fpb
 }
